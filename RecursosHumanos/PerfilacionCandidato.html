@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">Sistema De Recursos Humanos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="HojaDeVida.html">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="PerfilaciónOferta.html">Ofertas Vigentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PerfilacionCandidato.html">Personal Vigente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="filters">
+        <label for="filter-type">Filtrar Por Tipo De Candidato:</label>
+        <select id="filter-type" onchange="redirectToPage()">
+            <option value="all">Todos</option>
+            <option value="formal">Formales</option>
+            <option value="informal">Informales</option>
+        </select>
+    </div>
+  </main>
+  <script>
+    function redirectToPage() {
+      var select = document.getElementById('filter-type');
+      var selectedValue = select.options[select.selectedIndex].value;
+        
+      if (selectedValue === 'formal') {
+          window.location.href = 'CandidatoFormal.html';
+      } else if (selectedValue === 'informal') {
+          window.location.href = 'CandidatoInformal.html';
+      } else {
+          window.location.href = 'PerfilacionCandidato.html';
+        }
+    }
+</script>
+  <section class="OfertasVigentes">
+        <div class="card" style="width: 18rem;" id="Personal">
+            <div class="card-body">
+                <h5 class="card-title">Postularse A Ofertas De Empleo</h5>
+                <p class="card-text">Si quiere postularse a ofertas de empleo para que las empresas puedan visualizar su perfil registrese aqui</p>
+                <a href="" class="btn btn-primary">Postularse A Ofertas</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" id="Personal">
+            <img src="img/pic-3.jpg" alt="" style=" border-radius: .5rem;">
+            <h3>Tunjano</h3>
+            <span>Desarrollador Senior</span>
+            <div class="card-body">
+                <p>Titulos: <span>4</span></p>
+                <p>Visitas Al Perfil: <span>1B</span></p>
+                <p>Antecedentes: <span>0</span></p>
+                <a href="#" class="btn btn-primary">Ver Perfil</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" id="Personal">
+            <img src="img/pic-1.jpg" alt="" style=" border-radius: .5rem;">
+            <h3>Neider</h3>
+            <span>Informal</span>
+            <div class="card-body">
+                <p>Titulos: <span>None</span></p>
+                <p>Visitas Al Perfil: <span>0</span></p>
+                <p>Antecedentes: <span>26</span></p>
+                <a href="PerfilPersonal.html" class="btn btn-primary">Ver Perfil</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" id="Personal">
+            <img src="img/pic-2.jpg" alt="" style=" border-radius: .5rem;">
+            <h3>Wilson</h3>
+            <span>Tecnico</span>
+            <div class="card-body">
+                <p>Titulos: <span>1</span></p>
+                <p>Visitas Al Perfil: <span>18</span></p>
+                <p>Antecedentes: <span>1208</span></p>
+                <a href="#" class="btn btn-primary">Ver Perfil</a>
+            </div>
+        </div>
+  </section>
+  <section class="OfertasVigentes">
+    <div class="card" style="width: 18rem;" id="Personal">
+      <img src="img/pic-7.jpg" alt="" style=" border-radius: .5rem;">
+      <h3>Cristina</h3>
+      <span>Tecnologo</span>
+      <div class="card-body">
+        <p>Titulos: <span>2</span></p>
+        <p>Visitas Al Perfil: <span>3</span></p>
+        <p>Antecedentes: <span>Terrorista Mundial</span></p>
+        <a href="#" class="btn btn-primary">Ver Perfil</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="Personal">
+      <img src="img/pic-8.jpg" alt="" style=" border-radius: .5rem;">
+      <h3>Andres</h3>
+      <span>Informal</span>
+      <div class="card-body">
+        <p>Titulos: <span>1</span></p>
+        <p>Visitas Al Perfil: <span>98</span></p>
+        <p>Antecedentes: <span>Limpio, Persona Sana</span></p>
+        <a href="#" class="btn btn-primary">Ver Perfil</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="Personal">
+      <img src="img/pic-9.jpg" alt="" style=" border-radius: .5rem;">
+      <h3>Jhon Pork</h3>
+      <span>Lider Mundial</span>
+      <div class="card-body">
+        <p>Titulos: <span>40</span></p>
+        <p>Visitas Al Perfil: <span>3B</span></p>
+        <p>Antecedentes: <span>Ex-Convicto</span></p>
+        <a href="#" class="btn btn-primary">Ver Perfil</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="Personal">
+      <img src="img/pic-5.jpg" alt="" style=" border-radius: .5rem;">
+      <h3>Roberta</h3>
+      <span>Postgrado</span>
+      <div class="card-body">
+        <p>Titulos: <span>9</span></p>
+         <p>Visitas Al Perfil: <span>18</span></p>
+         <p>Antecedentes: <span>Narcotraficante</span></p>
+        <a href="#" class="btn btn-primary">Ver Perfil</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+  

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sistema De Recursos Humanos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="HojaDeVida.html">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="PerfilaciónOferta.html">Ofertas Vigentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PerfilacionCandidato.html">Personal Vigente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Home1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Home2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Home3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <hr>
+    <table border="1">
+        <tr>
+          <th><h1 class="heading">Ofertas De Empleo Segun Tus Intereses...</h1></th>
+          <th><h1 class="heading">Personal Disponible Segun Tus Intereses...</h1></th>
+        </tr>
+        <tr>
+          <td><section class="OfertasVigentes">
+            <div class="card" style="width: 18rem;" id="Personal">
+                <div class="card-body">
+                    <h5 class="card-title">Personal Disponible</h5>
+                    <p class="card-text">Si quiere mirar todo el personal disponible para su empresa ingrese aqui</p>
+                    <a href="PerfilacionCandidato.html" class="btn btn-primary">Mirar Personal Disponible</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;" id="Personal">
+                <img src="img/pic-1.jpg" alt="" style=" border-radius: .5rem;">
+                <h3>Neider</h3>
+                <span>Informal</span>
+                <div class="card-body">
+                    <p>Titulos: <span>None</span></p>
+                    <p>Visitas Al Perfil: <span>0</span></p>
+                    <p>Antecedentes: <span>26</span></p>
+                    <a href="PerfilPersonal.html" class="btn btn-primary">Ver Perfil</a>
+                </div>
+            </div>
+         </section></td>
+          <td><section class="OfertasVigentes">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Ofertas Vigentes</h5>
+                <p class="card-text">Si quiere mirar todas las ofertas disponibles dele click aqui</p>
+                <a href="PerfilaciónOferta.html" class="btn btn-primary">Mirar Ofertas Vigentes</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/Cajero.webp" class="card-img-top" alt="..." width="200px" height="180">
+              <div class="card-body">
+                <h5 class="card-title">Cajero McDonals</h5>
+                <p class="card-text">Se necesita cajero para el McDonals</p>
+                <a href="" class="btn btn-primary">Ver Oferta</a>
+              </div>
+            </div>
+          </section></td>
+        </tr>
+      </table>
+
+    
+</body>
+</html>

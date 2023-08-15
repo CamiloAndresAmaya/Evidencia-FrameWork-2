@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con todos los tipos de input</title>
+  <link rel="stylesheet" href="styleBasic.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conozcamos mas sobre tí</h1>
+        <div class="profile-picture">
+         <form action="#" method="post"></form>
+        </div>
+    </div>
+  <div class="container">
+    <form action="#" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ejemplo: 1234567890">
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha">
+
+     <div>
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+     </div>
+   
+      
+      <label for="intereses" class="intereses">Intereses:</label>
+      <input type="checkbox" id="deportes" name="intereses" value="deportes">Deportes
+      <input type="checkbox" id="musica" name="intereses" value="musica">Musica
+      <input type="checkbox" id="lectura" name="intereses" value="lectura">Lectura
+      <hr>
+
+      <label class="intereses">Estado civil:</label>
+      <input type="radio" id="soltero" name="estadoCivil" value="soltero">Soltero
+      <input type="radio" id="casado" name="estadoCivil" value="casado">Casado
+      <input type="radio" id="otroEstadoCivil" name="estadoCivil" value="otro">Otro
+      <hr>
+
+      <label for="archivo">Subir archivo:</label>
+      <input type="file" id="archivo" name="archivo">
+      <hr>
+      
+      <label for="comentarios">Escoge tu color favorito</label>
+      <input type="color" id="color" name="choisecolor">
+      <hr>
+
+      <input type="submit" value="Ingresar">
+    </form>
+  </div>
+</body>
+</html>
+
+

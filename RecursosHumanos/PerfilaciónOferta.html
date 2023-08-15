@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+    <script src="AgregarOferta.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">Sistema De Recursos Humanos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="HojaDeVida.html">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="PerfilaciónOferta.html">Ofertas Vigentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PerfilacionCandidato.html">Personal Vigente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <section class="OfertasVigentes">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Crear Oferta De Empleo</h5>
+        <p class="card-text">Si quieres publicar una oferta de empleo para que los postulantes puedan verla presiona aqui abajo</p>
+        <a href="PublicarOferta.html" class="btn btn-primary">Crear Oferta De Empleo</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/Cajero.webp" class="card-img-top" alt="..." width="200px" height="180">
+      <div class="card-body">
+        <h5 class="card-title">Cajero McDonals</h5>
+        <p class="card-text">Se necesita cajero para el McDonals</p>
+        <a href="" class="btn btn-primary">Ver Oferta</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/Barrer.jpg" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">Barredor De Calles</h5>
+        <p class="card-text">Se necesita experto en barrer</p>
+        <a href="#" class="btn btn-primary">Ver Oferta</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/BarMen.jpg" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">Barmen</h5>
+        <p class="card-text">Se necesita cajero Barmen</p>
+        <a href="#" class="btn btn-primary">Ver Oferta</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="OfertasVigentes">
+    <div class="card" style="width: 18rem;">
+      <img src="img/Cesped.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cortador De Cesped</h5>
+        <p class="card-text">Se necesita cajero Cortador De Cesped Profesional</p>
+        <a href="#" class="btn btn-primary">Ver Oferta</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/thumb-8.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Base De Datos</h5>
+        <p class="card-text">Se Necesita Administrador De Base De Datos En MySQL</p>
+        <a href="#" class="btn btn-primary">Ver Oferta</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/thumb-3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Programador JS</h5>
+        <p class="card-text">Se Necesita Programador Experto En JavaScript</p>
+        <a href="#" class="btn btn-primary">Ver Oferta</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="img/thumb-2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Diseñador CSS</h5>
+        <p class="card-text">Se Necesita Programador Experto En El Diseño De Paginas Web</p>
+        <a href="#" class="btn btn-primary">Ver Oferta</a>
+      </div>
+    </div>
+  </section>
+  <div class="container" id="offerList"></div>
+
+  
+    
+</body>
+</html>

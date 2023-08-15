@@ -1,0 +1,10 @@
+.LibrosSection{
+	display: flex;
+   	align-items: center;
+   	justify-content: space-between;
+   	border-radius: .5rem;
+   	background-color: var(--white);
+   	padding: 2rem;
+
+
+}
